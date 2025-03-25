@@ -10,13 +10,20 @@
     <!-- Configura a viewport para adaptar o layout à largura da tela do dispositivo -->
      <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
     <!-- Vincula a folha de estilo externa "style.css" -->
     <link rel="stylesheet" href="respo.css">
     <title>HOUSE-BURGER</title>
     <!-- Define o título da página -->
 </head>
 
-<body>
+<body id="bod">
 
     <script>
         // Função para alternar (abrir/fechar) o dropdown
@@ -58,7 +65,7 @@
 
             <!-- Itens do dropdown -->
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#executivo">Pratos Executivos</a>
+                <a class="dropdown-item" href="#executivo">Trios</a>
                 <a class="dropdown-item" href="#file-m">Filé Mignon</a>
                 <a class="dropdown-item" href="#file-t">Filé de Tilápia</a>
                 <a class="dropdown-item" href="#file-f">Filé de Frango</a>
@@ -73,37 +80,53 @@
     <div class="menu" align="center">
 
 
-        <h1 id="executivo">PRATOS <SPAN id="titulo">EXECUTIVOS</SPAN></h1>
+        <h1 id="executivo">SABOROSO</h1>
+        
 
         <table>
-            <h2 id="Picanha"> 🥩PICANHA🥩</h2>
+            <h2 id="Picanha">TRIOS <img id="tri" src="TRIOS.png" alt="imagem"></h2>
+            
 
             <!-- Tabela para listar os itens do cardápio -->
 
             <tr>
-                <td><b><span id="numero">1</span>. Picanha Grelhada, Arroz Branco, Feijão, Batata Frita e Salada.</b>
+                <td><b><span id="numero">P1</span>. Nº7 + REFRI LATA + FRITAS.<P>PÃO ESPECIAL, HAMBURGUER, QUEIJO, PRESUNTO, OVO, BANCO E SALADA.</P></b>
                 </td>
-                <td><b><span id="preco">R$ 15,00</span></b></td>
+                
+                <td><b><span id="preco">R$ 40,00</span></b></td>
+                
             </tr>
             <tr>
-                <td><b><span id="numero">2</span>. Arroz Branco, Feijão, Guarnição Francesa e
-                        Salada.</b></td>
-                <td><b><span id="preco">R$ 18,00</span></b></td>
+                <td><b><span id="numero">P2</span>. Nº6 + REFRI LATA + FRITAS<P>PÃO ESPECIAL, HAMBURGUER, QUEIJO, OVO, BACON E SALADA.</P></b></td>
+                <td><b><span id="preco">R$18,00</span></b></td>
             </tr>
             <tr>
-                <td><b><span id="numero">3</span>. Picanha Grelhada, Arroz C/Brócolis, Salada e Batata
-                        Frita.</b></td>
-                <td><b><span id="preco">R$ 20,00</span></b></td>
+                <td><b><span id="numero">P3</span>. Nº5 + REFRI LATA + FRITAS<P>PÃO ESPECIAL, HAMBURGUER, QUEIJO, OVO E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 37,00</span></b></td>
             </tr>
             <tr>
-                <td><b><span id="numero">4</span>. Picanha Grelhada, Risoto Piamontese da Casa, Batata Frita e
-                        Salada.</b></td>
-                <td><b><span id="preco">R$ 17,00</span></b></td>
+                <td><b><span id="numero">P4</span>. Nº7 + CREME + FRITAS <P>PÃO ESPECIAL, HAMBURGUER, QUEIJO, PRESUNTO, OVO, BACON E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$42,00</span></b></td>
             </tr>
             <tr>
-                <td><b><span id="numero">5</span>. Picanha Grelhada, Arroz à Grega, Batata Frita, Feijão e
-                        Salada.</b></td>
-                <td><b><span id="preco">R$ 25,00</span></b></td>
+                <td><b><span id="numero">P5</span>. Nº10 + REFRI LATA + FRITAS<P>PÃO ESPECIAL, PEITO DE FRANGO, QUEIJO E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 38,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">P6</span>. Nº12 + SUCO DE LARANJA + FRITAS<P>PÃO ESPECIAL, PEITO DE FRANGO, QUEIJO, PRESUNTO, OVO, BACON E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 48,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">P7</span>. Nº14 + SUCO DE LARANJA + FRITAS<P>PÃO ESPECIAL, PEITO DE FRANGO, QUEIJO, PRESUNTO, OVO, BACON E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 50,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">P8</span>. Nº7 + CREME DE MORANGO<P>PÃO ESPECIAL, HAMBURGUER, QUEIJO, PRESUNTO, OVO, BACON E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 36,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">P9</span>. BURGUER + REFRI LATA + FRITAS<P>PÃO ESPECIAL, 3 HAMBURGUERS, OVO, BACON, PRESUNTO, QUEIJO E SALADA.</P>.</b></td>
+                <td><b><span id="preco">R$ 48,00</span></b></td>
             </tr>
         </table>
 
