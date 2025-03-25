@@ -234,7 +234,7 @@ footer {
 }
 table {
     background-color: #0000007c;
-    width: 50%; /* Largura total */
+    width: 100%; /* Largura total */
     border-collapse: collapse; /* Remove espaços entre as células */
     margin-top: 10px; /* Espaçamento acima da tabela */
     
