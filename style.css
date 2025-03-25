@@ -33,6 +33,42 @@ body {
 #head img{
     height: 150px;
 }
+.menu {
+    padding-top: 0px;
+    margin: 20px auto;
+    max-width: 100%; /* Garante que o menu não ultrapasse a largura da tela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    border-radius: 0%;
+}
+/* Estilos para o título do cardápio */
+.menu h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu table {
+    list-style-type: none;
+    padding: 0 10px; /* Adiciona um pequeno espaçamento nas laterais */
+    margin: 0;
+    overflow: hidden; /* Evita que o conteúdo ultrapasse o contêiner */
+}
+
+.menu table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    word-wrap: break-word; /* Quebra palavras longas para evitar overflow */
+    overflow: visible; /* Garante que o texto não seja cortado */
+}
+.menu table td tr {
+    display: block; /* Faz o texto ocupar toda a largura */
+}
+
 /* Estilos CSS para o dropdown */
 .dropdown {
     position: fixed; /* Fixa o dropdown na tela */
@@ -124,6 +160,32 @@ body {
     height: 40px; /* Define o tamanho da imagem */
     border-radius: 50%; /* Deixa a imagem redonda (opcional) */
 }
+
+#executivo{
+    padding-top: 190px;
+    }
+    #file-m{
+        padding-top: 190px;
+    }
+        #file-t{
+            padding-top: 190px;
+        }   
+            #file-f{
+                padding-top: 190px;
+            }
+                #abc{
+                    padding-top: 190px;
+                }
+                    #bebidas{
+                        padding-top:190px;
+                    }
+                        #suco{
+                            padding-top:190px;
+                        }
+
+
+
+
 footer {
     background-color: #000000b0; /* Cor de fundo do footer */
     color: #ffffff; /* Cor do texto */
