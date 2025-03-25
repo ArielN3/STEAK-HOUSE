@@ -1,3 +1,7 @@
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+}
 body {
     width: 100%;
     text-align: center;
@@ -11,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .header {  
     background-color: rgba(0, 0, 0, 0.863);
     border-radius: 15px;
@@ -32,6 +37,7 @@ body {
 
 #head img{
     height: 150px;
+
 }
 .menu {
     padding-top: 0px;
@@ -161,9 +167,20 @@ body {
     border-radius: 50%; /* Deixa a imagem redonda (opcional) */
 }
 
+#Picanha{
+    color: red;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35PX;
+}
 #executivo{
     padding-top: 190px;
+    color: red;
+    font-family: "Boldonse", system-ui;
+    font-size: 25px;
     }
+
     #file-m{
         padding-top: 190px;
     }
@@ -210,4 +227,30 @@ footer {
 }
 .instagram-icon:hover {
     transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
+}
+#tri{
+    
+    height: 150px;
+}
+table {
+    background-color: #0000007c;
+    width: 50%; /* Largura total */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    margin-top: 10px; /* Espaçamento acima da tabela */
+    
+}
+
+/* Estilo das células */
+td {
+    
+    border-bottom: 1px solid #ddd; /* Linha divisória entre as linhas */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo da célula de preço */
+td:nth-child(2) {
+    text-align: right; /* Alinha o preço à direita */
+    color: #f5faff; /* Cor azul para o preço */
+    font-weight: bold; /* Texto em negrito */
 }
