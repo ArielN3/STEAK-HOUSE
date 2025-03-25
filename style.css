@@ -1,0 +1,151 @@
+body {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    background-image: url(fundo-steak.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #f8f8f8; /* Cor padrão do texto */
+    margin: 0;
+    padding: 0;
+}
+.header {  
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 230, 0, 0.545);
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 10px 0; /* Espaçamento interno */
+    top: 0; /* Alinha no topo da página */
+    height: 150px;
+    backdrop-filter: blur(5px); /* Efeito de desfoque (opcional) */
+}
+#head {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(221, 218, 218);
+    font-size: 16px;
+    width: 100%;
+}
+
+#head img{
+    height: 150px;
+}
+/* Estilos CSS para o dropdown */
+.dropdown {
+    position: fixed; /* Fixa o dropdown na tela */
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da direita da página */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    
+}
+
+.dropdown-button {
+    background-color: #6c757d00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50px;
+}
+
+.dropdown-menu {
+    display: none; /* Esconde o menu inicialmente */
+    position: absolute;
+    background-color: #000000; /* Cor de fundo do menu */
+    background-image: url(menuicon.jpg); /* Imagem de fundo */
+    background-position: center;
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+    font: bold;
+    overflow: hidden;
+    right: 0; /* Alinha o menu à direita do botão */
+    left: auto; /* Garante que o menu não fique alinhado à esquerda */
+    position: relative; /* Necessário para o pseudo-elemento */
+    
+}
+
+/* Pseudo-elemento para escurecer apenas a imagem de fundo */
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Overlay preto com 50% de opacidade */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo */
+    border-radius: 20px; /* Mantém o mesmo border-radius do menu */
+}
+
+.dropdown-item {
+    z-index: 1000;
+    font-weight: 625; /* Deixa a fonte um pouco mais grossa (600 é semi-bold) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #0000009e; /* Cor de fundo ao passar o mouse (um tom mais claro) */
+    cursor: pointer; /* Muda o cursor para indicar que o item é clicável */
+}
+
+/* Mostra o menu quando o dropdown está ativo */
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* Estilo para as seções da página */
+.section {
+     
+    padding: 50px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Estilos para a imagem dentro do botão */
+.dropdown-button img {
+    width: 40px; /* Define o tamanho da imagem */
+    height: 40px; /* Define o tamanho da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda (opcional) */
+}
+footer {
+    background-color: #000000b0; /* Cor de fundo do footer */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    border-top: 1px solid #333; /* Linha superior para destacar o footer */
+}
+
+/* Container do conteúdo do footer */
+.footer-content {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+/* Ícone do Instagram */
+.instagram-icon {
+    width: 80px; /* Tamanho do ícone */
+    height: 80px;
+    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+    transition: transform 0.2s ease; /* Efeito de hover suave */
+}
+.instagram-icon:hover {
+    transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
+}

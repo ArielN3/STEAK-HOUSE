@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Indica que o documento é compatível com a versão mais recente do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para adaptar o layout à largura da tela do dispositivo -->
+     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Vincula a folha de estilo externa "style.css" -->
+    <link rel="stylesheet" href="respo.css">
+    <title>HOUSE-BURGER</title>
+    <!-- Define o título da página -->
+</head>
+
+<body>
+
+    <script>
+        // Função para alternar (abrir/fechar) o dropdown
+        function toggleDropdown() {
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        // Fechar o dropdown ao clicar fora dele
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-button')) {
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                    if (dropdown.classList.contains('active')) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+            }
+        };
+    </script>
+
+
+    <!-- Início do corpo do documento HTML -->
+
+    <header class="header">
+        <!-- Início do cabeçalho -->
+        <table id="head" align="center">
+            <!-- Cria uma tabela centralizada -->
+            <tr>
+                <td>
+                    <img src="logo.png" alt="Logo-empresa">
+                </td>
+            </tr>
+
+        </table>
+        <div class="dropdown">
+            <!-- Botão do dropdown -->
+            <img src="iconemenu.png" alt="" button class="dropdown-button" onclick="toggleDropdown()">
+
+            <!-- Itens do dropdown -->
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#executivo">Pratos Executivos</a>
+                <a class="dropdown-item" href="#file-m">Filé Mignon</a>
+                <a class="dropdown-item" href="#file-t">Filé de Tilápia</a>
+                <a class="dropdown-item" href="#file-f">Filé de Frango</a>
+                <a class="dropdown-item" href="#abc">Adicionais</a>
+                <a class="dropdown-item" href="#bebidas">Bebidas</a>
+                <a class="dropdown-item" href="#suco">Sucos</a>
+
+            </div>
+        </div>
+    </header>
+    <!-- Fim do cabeçalho -->
+    <div class="menu" align="center">
+
+
+        <h1 id="executivo">PRATOS <SPAN id="titulo">EXECUTIVOS</SPAN></h1>
+
+        <table>
+            <h2 id="Picanha"> 🥩PICANHA🥩</h2>
+
+            <!-- Tabela para listar os itens do cardápio -->
+
+            <tr>
+                <td><b><span id="numero">1</span>. Picanha Grelhada, Arroz Branco, Feijão, Batata Frita e Salada.</b>
+                </td>
+                <td><b><span id="preco">R$ 15,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">2</span>. Arroz Branco, Feijão, Guarnição Francesa e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 18,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">3</span>. Picanha Grelhada, Arroz C/Brócolis, Salada e Batata
+                        Frita.</b></td>
+                <td><b><span id="preco">R$ 20,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">4</span>. Picanha Grelhada, Risoto Piamontese da Casa, Batata Frita e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 17,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">5</span>. Picanha Grelhada, Arroz à Grega, Batata Frita, Feijão e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 25,00</span></b></td>
+            </tr>
+        </table>
+
+
+
+
+        <table>
+            <h2 id="file-m"> 🥩FILÉ MIGNON🥩</h2>
+            <tr>
+                <td><b><span id="numero">6</span>.Filé Mignon Grelhado, Arroz Branco, Feijão, Batata Frita e Salada.</b>
+                </td>
+                <td><b><span id="preco">R$22,00</span></b></td>
+            </tr>
+
+            <tr>
+                <td><b><span id="numero">7</span>.Filé Mignon Grelhado, Risoto Piamontese da Casa, Batata Frita e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 19,00</span></b></td>
+            </tr>
+
+            <tr>
+                <td><b><span id="numero">8</span>.Filé Mignon Grelhado, ao Molho de Mostarda, Arroz Branco, Feijão,
+                        Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 23,00</span></b></td>
+            </tr>
+
+            <tr>
+                <td><b><span id="numero">9</span>.Medalhão de Filé Mignon, Arroz à Grega, Batata Frita, Feijão e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+
+            <tr>
+                <td><b><span id="numero">10</span>.Strogonoff de Filé Mignon, Arroz Branco, Batata e Salada.</b></td>
+                <td><b><span id="preco">R$ 24,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">11</span>.Parmegiana de Filé Mignon, Arroz Branco, Feijão, Batata Frita e
+                        Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+        </table>
+
+        
+
+        <h2 id="file-t">🐟FILÉ DE TILÁPIA🐟</h2>
+
+        <!-- Tabela para listar os itens do cardápio -->
+        <table>
+            <tr>
+                <td><b><span id="numero">12</span>. Filé de Tilápia, Arroz Branco, Feijão, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 22,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">13</span>. Filé de Tilápia, Arroz Branco, Feijão, Guarnição Francesa e Salada.</b></td>
+                <td><b><span id="preco">R$ 19,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">14</span>. Filé de Tilápia, Arroz com Brócolis, Salada e Batata Frita.</b></td>
+                <td><b><span id="preco">R$ 23,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">15</span>. Filé de Tilápia, Risoto Piamontese da Casa, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">16</span>. Filé de Tilápia, Risoto de Brócolis, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 24,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">17</span>. Filé de Tilápia, Arroz à Grega, Batata Frita, Feijão e Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+        </table>
+
+
+       
+
+        <h2 align="center" id="file-f">🍗FILÉ DE FRANGO🍗</h2>
+
+        <!-- Tabela para listar os itens do cardápio -->
+        <table>
+            <tr>
+                <td><b><span id="numero">18</span>. Filé de Frango Grelhado, Arroz, Feijão, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 22,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">19</span>. Filé de Frango Grelhado, Risoto de Queijo com Brócolis, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 19,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">20</span>. Parmegiana de Frango, Arroz, Batata Frita.</b></td>
+                <td><b><span id="preco">R$ 23,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">21</span>. Strogonoff de Frango, Arroz, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">22</span>. Filé de Frango Grelhado, Arroz à Grega, Feijão, Batata Frita e Salada.</b></td>
+                <td><b><span id="preco">R$ 24,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">23</span>. Medalhão de Frango ao Molho de Mostarda, Arroz, Feijão, Fritas e Salada.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+        </table>
+        
+        
+
+      
+        <h2 id="abc" align="center">🍔ADICIONAIS🍔</h2>
+
+        <!-- Tabela para listar os itens de adicionais -->
+        <table>
+            <tr>
+                <td><b><span id="numero">24</span>.. Filé Bovino 120G.</b></td>
+                <td><b><span id="preco">R$ 22,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">24</span>. Filé de Tilápia 120G.</b></td>
+                <td><b><span id="preco">R$ 19,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">25</span>. Filé de Frango 120G.</b></td>
+                <td><b><span id="preco">R$ 23,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">26</span>. Filé de Picanha 120G.</b></td>
+                <td><b><span id="preco">R$ 28,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">27</span>. Arroz ou Feijão.</b></td>
+                <td><b><span id="preco">R$ 8,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">28</span>. Ovo.</b></td>
+                <td><b><span id="preco">R$ 3,00</span></b></td>
+            </tr>
+        </table>
+
+
+       
+        <!-- Tabela para listar as bebidas -->
+        <table>
+            <h2 id="bebidas" align="center">🥤DRINKS🥤</h2>
+            <tr>
+                <td><b><span id="numero">29</span>. Drink de Morango 400ML.</b></td>
+                <td><b><span id="preco">R$ 12,00</span></b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Água com gás, Dose de Vodka ou Smirnoff, Doce de Morango, Gelo e Chantily</p></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">30</span>. Drink de Kiwi 400ML.</b></td>
+                <td><b><span id="preco">R$ 12,00</span></b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Água com gás, Dose de Vodka ou Smirnoff, Doce de Kiwi, Gelo e Chantily</p></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">31</span>. Drink de Menta 400ML.</b></td>
+                <td><b><span id="preco">R$ 12,00</span></b></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Água com gás, Dose de Vodka ou Smirnoff, Doce de Menta, Gelo e Chantily</p></td>
+            </tr>
+            
+            <BR>
+            </table>
+
+          <table>
+            <h2 id="bebidas" align="center">🥤REFRIGERANTE / ÁGUA🥤</h2>
+           
+            <tr>
+                <td><b><span id="numero">32</span>. Coca Cola ks 290Ml.</b></td>
+                <td><b><span id="preco">R$ 8,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">33</span>. RefrigeranteS Lata.</b></td>
+                <td><b><span id="preco">R$ 7,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b>. Água Mineral Sem Gás.</b></td>
+                <td><b><span id="preco">R$ 5,00</span></b></td>
+            </tr>
+        </table>
+        <TABle>
+            <h2 id="bebidas" align="center">🍻CERVEJAS🍻</h2>
+            
+            <tr>
+                <td><b><span id="numero">34</span>. Chopp Colorado 400ML.</b></td>
+                <td><b><span id="preco">R$ 10,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">35</span>. Cerveja Importada Long Neck.</b></td>
+                <td><b><span id="preco">R$ 12,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">36</span>. Cerveja Importada 600ML.</b></td>
+                <td><b><span id="preco">R$ 17,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">37</span>. Cerveja Nacional Long Neck.</b></td>
+                <td><b><span id="preco">R$ 12,00</span></b></td>
+            </tr>
+            <tr>
+                <td><b><span id="numero">38</span>. Cerveja Nacional 600ML.</b></td>
+                <td><b><span id="preco">R$ 17,00</span></b></td>
+            </tr>
+            
+          </TABle>
+    </table>
+        <h2 align="center" id="suco">🥤SUCOS E CREMES🥤</h2>
+        <h2 align="center" id="TITULO">↨ SABORES ↨</h2>
+        
+        <!-- Tabela para listar os sucos -->
+        <table>
+            <tr>
+                <td><b><span id="numero">39</span>.SUCOS 400ML.</b></td>
+                <td><b><span id="preco">R$ 13,00</span></b></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>ACEROLA</li>
+                        <li>CUPUAÇU</li>
+                        <li>GRAVIOLA</li>
+                        <li>MANGA</li>
+                        <li>CAJÁ</li>
+                        <li>MARACUJÁ</li>
+                        <li>LARANJA</li>
+                        <li>LARANJA C/ACEROLA</li>
+                        <li>LARANJA C/MORANGO</li>
+                        <li>LIMÃO</li>
+                        <li>GOIABA</li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <table>
+            <tr>
+                <td><b><span id="numero">40</span>.CREMES 400ML.</b></td>
+                <td><b><span id="preco">R$ 16   ,00</span></b></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>MORANGO</li>
+                        <li>CUPUAÇU</li>
+                        <li>GRAVIOLA</li>
+                        <li>MARACUJÁ</li>
+                        <li>ACEROLA</li>
+                        <li>CAJÁ</li>
+                        <li>GOIABA</li>
+                    </ul>
+                </td>
+            </tr>
+            </table>
+        </table>
+
+    </div>
+    <!-- Fim da lista do cardápio -->
+
+
+    <br><br><br><br><br><br>
+
+    <footer id="cardapio">
+        <div class="footer-content">
+            <!-- Ícone do Instagram com link para o perfil -->
+            <a href="https://www.instagram.com/houseburger_leste" target="_blank">
+                <img src="insta.png" alt="Instagram" class="instagram-icon">
+            </a>
+            <a href="https://wa.me/556133851000" target="_blank">
+                <img src="zap.png" alt="WhatsApp" class="instagram-icon">
+            </a>            
+    
+            <section id="creditos">
+                <p>
+                    Acompanhe todas as nossas novidades!
+                </p>
+            </section>
+        </div>
+       
+    </footer>
+</body>
+<!-- Fim do corpo do documento -->
+
+</html>
