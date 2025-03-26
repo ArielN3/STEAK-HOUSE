@@ -181,9 +181,25 @@ body {
     font-size: 25px;
     }
 
-    #file-m{
+    #file-m {
         padding-top: 190px;
+        font-family: "Boldonse", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.5); /* Ajuste os valores conforme necessário */
     }
+   #arte{
+    color: red;
+    text-shadow: 6px 5px 4px rgba(255, 255, 255, 0.5); /* Ajuste os valores conforme necessário */
+   }
+    .lobster-regular {
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+      }
+
+      
         #file-t{
             padding-top: 190px;
         }   
@@ -199,14 +215,14 @@ body {
                         #suco{
                             padding-top:190px;
                         }
- #numero {
-        color: #ffe600; /* Cor escura para o número */
-        font-weight: bold; /* Texto em negrito */
-        font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
 
-
+                        #numero {
+                            color: #ffe600; /* Cor escura para o número */
+                            font-weight: bold; /* Texto em negrito */
+                            font-size: 16px;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                    
 
 
 footer {
