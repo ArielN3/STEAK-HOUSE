@@ -173,12 +173,15 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 35PX;
+    text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.5); /* Ajuste os valores conforme necessário */
 }
 #executivo{
     padding-top: 190px;
     color: red;
     font-family: "Boldonse", system-ui;
     font-size: 25px;
+    text-shadow: 6px 5px 4px rgba(255, 0, 0, 0.527); /* Ajuste os valores conforme necessário */
+    
     }
 
     #file-m {
