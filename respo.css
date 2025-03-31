@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 480px) {
-   
+    
     .menu h2 {
         font-size: 2.9em;
     }
@@ -121,5 +121,48 @@
     .dropdown-item {
         padding: 6px 12px; /* Reduz o padding dos itens */
         font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+}
+/* Media Queries para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    #especial {
+        font-size: 28px;
+        text-shadow: 3px 2px 3px rgba(255, 0, 0, 0.541);
+    }
+    
+    #espe td {
+        padding: 12px 10px;
+        display: block;
+        text-align: center !important;
+    }
+    
+    .preco {
+        text-align: center !important;
+        padding-top: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #especial {
+        font-size: 22px;
+    }
+    
+    #espe td {
+        padding: 10px 8px;
+        font-size: 0.9em;
+    }
+    
+    #numero, .preco {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-sanduiche {
+        max-width: 700px;
+    }
+    
+    #especial {
+        font-size: 35px;
     }
 }
