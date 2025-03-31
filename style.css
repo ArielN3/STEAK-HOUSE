@@ -15,7 +15,431 @@ body {
     color: #f8f8f8;
     /* Cor padrão do texto */
     margin: 0;
+    padding: 0;html {
+    scroll-behavior: smooth;
+    /* Rolagem suave */
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    background-image: url(fundogif.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #f8f8f8;
+    /* Cor padrão do texto */
+    margin: 0;
     padding: 0;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.863);
+    box-shadow: 0 4px 15px rgba(255, 230, 0, 0.545);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
+    padding: 10px 0;
+    /* Espaçamento interno */
+    top: 0;
+    /* Alinha no topo da página */
+    height: 150px;
+    backdrop-filter: blur(5px);
+    /* Efeito de desfoque (opcional) */
+}
+
+#head {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(221, 218, 218);
+    font-size: 16px;
+    width: 100%;
+}
+
+#head img {
+    height: 150px;
+
+}
+
+.menu {
+    padding-top: 0px;
+    margin: 20px auto;
+    max-width: 100%;
+    /* Garante que o menu não ultrapasse a largura da tela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    /* Evita rolagem horizontal */
+    border-radius: 0%;
+}
+
+/* Estilos para o título do cardápio */
+.menu h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu table {
+    list-style-type: none;
+    padding: 0 10px;
+    /* Adiciona um pequeno espaçamento nas laterais */
+    margin: 0;
+    overflow: hidden;
+    /* Evita que o conteúdo ultrapasse o contêiner */
+}
+
+.menu table td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    white-space: normal;
+    /* Permite que o texto quebre em várias linhas */
+    word-wrap: break-word;
+    /* Quebra palavras longas para evitar overflow */
+    overflow: visible;
+    /* Garante que o texto não seja cortado */
+}
+
+.menu table td tr {
+    display: block;
+    /* Faz o texto ocupar toda a largura */
+}
+
+/* Estilos CSS para o dropdown */
+.dropdown {
+    position: fixed;
+    /* Fixa o dropdown na tela */
+    top: 20px;
+    /* Distância do topo da página */
+    right: 20px;
+    /* Distância da direita da página */
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
+
+}
+
+.dropdown-button {
+    background-color: #6c757d00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50px;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Esconde o menu inicialmente */
+    position: absolute;
+    background-color: #000000;
+    /* Cor de fundo do menu */
+    background-image: url(menuicon.jpg);
+    /* Imagem de fundo */
+    background-position: center;
+    background-size: cover;
+    /* Garante que a imagem cubra todo o fundo */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+    font: bold;
+    overflow: hidden;
+    right: 0;
+    /* Alinha o menu à direita do botão */
+    left: auto;
+    /* Garante que o menu não fique alinhado à esquerda */
+    position: relative;
+    /* Necessário para o pseudo-elemento */
+
+}
+
+/* Pseudo-elemento para escurecer apenas a imagem de fundo */
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Overlay preto com 50% de opacidade */
+    z-index: -1;
+    /* Coloca o overlay atrás do conteúdo */
+    border-radius: 20px;
+    /* Mantém o mesmo border-radius do menu */
+}
+
+.dropdown-item {
+    z-index: 1000;
+    font-weight: 625;
+    /* Deixa a fonte um pouco mais grossa (600 é semi-bold) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fonte moderna e legível */
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #0000009e;
+    /* Cor de fundo ao passar o mouse (um tom mais claro) */
+    cursor: pointer;
+    /* Muda o cursor para indicar que o item é clicável */
+}
+
+/* Mostra o menu quando o dropdown está ativo */
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+/* Estilo para as seções da página */
+.section {
+
+    padding: 50px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para a imagem dentro do botão */
+.dropdown-button img {
+    width: 40px;
+    /* Define o tamanho da imagem */
+    height: 40px;
+    /* Define o tamanho da imagem */
+    border-radius: 50%;
+    /* Deixa a imagem redonda (opcional) */
+}
+
+#Picanha {
+    color: red;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35PX;
+    text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.5);
+    /* Ajuste os valores conforme necessário */
+}
+
+#executivo {
+    padding-top: 190px;
+    color: red;
+    font-family: "Boldonse", system-ui;
+    font-size: 25px;
+    text-shadow: 6px 5px 4px rgba(255, 0, 0, 0.527);
+    /* Ajuste os valores conforme necessário */
+
+}
+
+#file-m {
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.5);
+    /* Ajuste os valores conforme necessário */
+}
+
+.artesanaltd {
+    text-align: center;
+
+}
+
+
+#arte {
+    color: red;
+    text-shadow: 6px 5px 4px rgba(255, 255, 255, 0.5);
+    /* Ajuste os valores conforme necessário */
+    font-size: 30px;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.obs {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    background-color: #ffffffb6;
+    border-radius: 100px;
+    width: 350px;
+
+}
+
+
+#file-t {
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+    
+}
+
+#file-f {
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+}
+.obshot{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f1ed00fa;
+   
+    width: 290px;
+}
+#abc {
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+
+}
+.container-especial{
+    padding-top: 190px;
+   
+}
+#especial {
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+}
+#espe{
+    overflow: hidden; /* garante que o border-radius funcione */
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden; /* garante que o border-radius funcione */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 400px; /* ajuste conforme necessário */
+    background: #0202026b;
+}
+
+#bebidas {
+    padding-top: 190px;
+}
+
+#suco {
+    padding-top: 190px;
+}
+
+#numero {
+    color: #ffe600;
+    /* Cor escura para o número */
+    font-weight: bold;
+    /* Texto em negrito */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+footer {
+    background-color: #000000b0;
+    /* Cor de fundo do footer */
+    color: #ffffff;
+    /* Cor do texto */
+    padding: 20px 0;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    font-family: Arial, sans-serif;
+    /* Fonte padrão */
+    border-top: 1px solid #333;
+    /* Linha superior para destacar o footer */
+}
+
+/* Container do conteúdo do footer */
+.footer-content {
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo na página */
+}
+
+/* Ícone do Instagram */
+.instagram-icon {
+    width: 80px;
+    /* Tamanho do ícone */
+    height: 80px;
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do ícone */
+    transition: transform 0.2s ease;
+    /* Efeito de hover suave */
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);
+    /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+#tri {
+
+    height: 150px;
+}
+
+table {
+    background-color: #0000007c;
+    width: 100%;
+    /* Largura total */
+    border-collapse: collapse;
+    /* Remove espaços entre as células */
+    margin-top: 10px;
+    /* Espaçamento acima da tabela */
+
+}
+
+/* Estilo das células */
+td {
+
+    border-bottom: 1px solid #ddd;
+    /* Linha divisória entre as linhas */
+    font-family: Arial, sans-serif;
+    /* Fonte */
+    font-size: 20px;
+    /* Tamanho da fonte */
+}
+
+/* Estilo da célula de preço */
+td:nth-child(2) {
+    text-align: right;
+    /* Alinha o preço à direita */
+    color: #f5faff;
+    /* Cor azul para o preço */
+    font-weight: bold;
+    /* Texto em negrito */
+}
 }
 
 .header {
