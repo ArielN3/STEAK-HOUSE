@@ -374,6 +374,7 @@ body {
     font-size: 18px;       /* Tamanho da fonte */
     color: #ffffff;           /* Cor do texto (opcional) */
     padding-left: 0;
+    text-align: left;
 }
 
 
