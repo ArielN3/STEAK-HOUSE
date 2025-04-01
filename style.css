@@ -334,6 +334,14 @@ body {
 
 #bebidas {
     padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+}
+#peito-f{
     padding-top: 190px;
     font-family: "Boldonse", system-ui;
     font-weight: 400;
@@ -342,10 +350,40 @@ body {
     text-shadow: 8px 5px 4px rgba(255, 0, 0, 0.541);
     /* Ajuste os valores conforme necessário */
 }
-
 #suco {
-    padding-top: 190px;
+    padding-top: 190px;padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 3px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
 }
+#creme{
+    padding-top: 190px;padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 3px 5px 4px rgba(255, 0, 0, 0.541);
+    /* Ajuste os valores conforme necessário */
+}
+
+.sabor ul li {
+    line-height: 2;        /* Espaçamento entre linhas */
+    font-size: 18px;       /* Tamanho da fonte */
+    color: #ffffff;           /* Cor do texto (opcional) */
+    padding-left: 0;
+}
+
+
+/*preço suco/creme */
+.presc{
+    font-size: 20px;
+    font: bold;
+    color: bisque;
+}
+
 
 #numero {
     color: #ffe600;
