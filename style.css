@@ -396,11 +396,9 @@ body {
     color: #77009b;
     -webkit-text-stroke: 0.5px #fce6ff41;
     -webkit-text-stroke: 0.5px #ffffff36;
-    
+    font-size: 27px;
 }
-#numeror{
-    color: #77009b;
-}
+
 /*preço suco/creme */
 .presc{
     font-size: 20px;
