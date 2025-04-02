@@ -401,6 +401,19 @@ body {
     font-size: 20px;
 }
 
+#bebida{
+    color: #fcfcfc;
+    padding-top: 190px;
+    font-family: "Boldonse", system-ui;
+    font-weight:  bold; /* Alterado para 700 (negrito) */
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 8px 5px 4px rgba(131, 0, 0, 0.89);
+    letter-spacing: 5px; /* Adicionado para aumentar o espaçamento entre letras */
+    /* ... outras propriedades ... */
+    -webkit-text-stroke: 0.5px #fce6ff41;
+    -webkit-text-stroke: 0.5px #ffffff34;
+}
 /*preço suco/creme */
 .presc{
     font-size: 20px;
