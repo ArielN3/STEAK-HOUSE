@@ -508,3 +508,21 @@ td:nth-child(2) {
     font-weight: bold;
     /* Texto em negrito */
 }
+.self-promotion {
+    text-align: center;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    background-color: #f8f8f800; /* opcional: fundo sutil */
+}
+
+.self-promotion a {
+    color: #42014b; /* cor do tema */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.self-promotion a:hover {
+    text-decoration: underline;
+}
