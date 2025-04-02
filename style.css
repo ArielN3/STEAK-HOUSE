@@ -378,14 +378,15 @@ body {
 }
 
 #açai {
-    color: #42014b;
+    color: #fcfcfc;
     padding-top: 190px;
     font-family: "Boldonse", system-ui;
     font-weight:  bold; /* Alterado para 700 (negrito) */
     font-style: normal;
     font-size: 25px;
-    text-shadow: 3px 5px 4px rgba(255, 255, 255, 0.541);
+    text-shadow: 8px 5px 4px rgba(109, 0, 131, 0.89);
     letter-spacing: 5px; /* Adicionado para aumentar o espaçamento entre letras */
+    /* ... outras propriedades ... */
     -webkit-text-stroke: 0.5px #fce6ff41;
     -webkit-text-stroke: 0.5px #ffffff34;
 }
@@ -394,6 +395,9 @@ body {
     color: #77009b;
     -webkit-text-stroke: 0.5px #fce6ff41;
     -webkit-text-stroke: 0.5px #ffffff36;
+    font-size: 15px;
+}
+#numeror{
     font-size: 20px;
 }
 
