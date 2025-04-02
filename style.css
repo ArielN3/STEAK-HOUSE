@@ -386,17 +386,15 @@ body {
     font-size: 25px;
     text-shadow: 3px 5px 4px rgba(255, 255, 255, 0.541);
     letter-spacing: 5px; /* Adicionado para aumentar o espaçamento entre letras */
-}
-#açai {
-    /* ... outras propriedades ... */
     -webkit-text-stroke: 0.5px #fce6ff41;
     -webkit-text-stroke: 0.5px #ffffff34;
 }
+
 #numeros{
     color: #77009b;
     -webkit-text-stroke: 0.5px #fce6ff41;
     -webkit-text-stroke: 0.5px #ffffff36;
-    font-size: 27px;
+    font-size: 20px;
 }
 
 /*preço suco/creme */
