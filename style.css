@@ -6,18 +6,19 @@ html {
 body {
     width: 100%;
     text-align: center;
-    background-color: rgb(7, 7, 7);
-    background-image: url(fundogf.gif);
+    background-color: rgb(160, 157, 157); /* Cor de fallback */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url("fundowal.jpg"); /* Overlay preto (60% de opacidade) + imagem */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-blend-mode: darken; /* Opcional: intensifica o escurecimento */
     font-family: 'Arial', sans-serif;
-    color: #f8f8f8;
-    /* Cor padrão do texto */
+    color: #f8f8f8; /* Texto claro para contraste */
     margin: 0;
     padding: 0;
 }
-
 .header {
     background-color: rgba(0, 0, 0, 0.863);
     box-shadow: 0 4px 15px rgba(255, 230, 0, 0.545);
