@@ -6,7 +6,7 @@ html {
 body {
     width: 100%;
     text-align: center;
-    background-color: rgb(160, 157, 157); /* Cor de fallback */
+    background-color: rgba(0, 0, 0, 0); /* Cor de fallback */
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
         url("fundowal.jpg"); /* Overlay preto (60% de opacidade) + imagem */
