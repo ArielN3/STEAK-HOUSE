@@ -20,7 +20,7 @@ body {
     padding: 0;
 }
 .header {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
    
     position: fixed;
     width: 100%;
@@ -31,7 +31,6 @@ body {
     top: 0;
     /* Alinha no topo da página */
     height: 150px;
-    backdrop-filter: blur(8px);
     /* Efeito de desfoque (opcional) */
 }
 
@@ -222,7 +221,7 @@ body {
 
 #executivo {
     padding-top: 190px;
-    color: red;
+    color: rgb(255, 0, 0);
     font-family: "Boldonse", system-ui;
     font-size: 25px;
     text-shadow: 6px 5px 4px rgba(255, 0, 0, 0.527);
